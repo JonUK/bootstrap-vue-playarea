@@ -1,17 +1,27 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app container">
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+
+        <my-carousel />
+
+      </div>
+
+    </div>
+
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Carousel from './components/Carousel.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MyCarousel: Carousel
   }
 }
 </script>
